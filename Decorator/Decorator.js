@@ -79,5 +79,6 @@ var RearFacingSeats = (function (_super) {
 }(CarOptions));
 var myTesla = new ModelS();
 myTesla = new RearFacingSeats(myTesla);
+myTesla = new EnhancedAutoPilot(myTesla);
 console.log(myTesla.cost());
 console.log(myTesla.getDescription());
