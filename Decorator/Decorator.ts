@@ -24,6 +24,7 @@ class ModelX extends Car {
     }
 }
 
+
 abstract class CarOptions extends Car {
     decoratedCar: Car;
     public abstract getDescription(): string;
