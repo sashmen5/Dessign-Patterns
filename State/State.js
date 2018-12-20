@@ -1,12 +1,15 @@
 var Order = (function () {
     function Order() {
-        this.cancelledOrdererState = new CancelledOrderState(this);
+        this.cancelledOrderState = new CancelledOrderState(this);
         this.paymentPendingState = new PaymentPendingState(this);
         this.orderBeingPreparedState = new OrderBeingPreparedState(this);
         this.orderShippedState = new OrderShippedState(this);
         this.setState(this.paymentPendingState);
     }
     Order.prototype.setState = function (state) {
+        this.currentState = state;
+    };
+    Order.prototype.getState = function () {
         return this.currentState;
     };
     return Order;
@@ -15,9 +18,9 @@ var PaymentPendingState = (function () {
     function PaymentPendingState(order) {
         this.order = order;
     }
-    PaymentPendingState.prototype.cancelOrderd = function () {
+    PaymentPendingState.prototype.cancelOrder = function () {
         console.log('Cancelling your unpaid order...');
-        this.order.setState(this.order.cancelledOrdererState);
+        this.order.setState(this.order.cancelledOrderState);
     };
     PaymentPendingState.prototype.verifyPayment = function () {
         console.log('Payment verified! Shipping soon.');
@@ -32,7 +35,7 @@ var CancelledOrderState = (function () {
     function CancelledOrderState(order) {
         this.order = order;
     }
-    CancelledOrderState.prototype.cancelOrderd = function () {
+    CancelledOrderState.prototype.cancelOrder = function () {
         console.log('Your order has already been cancelled');
     };
     CancelledOrderState.prototype.verifyPayment = function () {
@@ -47,9 +50,9 @@ var OrderBeingPreparedState = (function () {
     function OrderBeingPreparedState(order) {
         this.order = order;
     }
-    OrderBeingPreparedState.prototype.cancelOrderd = function () {
+    OrderBeingPreparedState.prototype.cancelOrder = function () {
         console.log('Cancelling you order...');
-        this.order.setState(this.order.cancelledOrdererState);
+        this.order.setState(this.order.cancelledOrderState);
     };
     OrderBeingPreparedState.prototype.verifyPayment = function () {
         console.log('Already verified your payment.');
@@ -64,7 +67,7 @@ var OrderShippedState = (function () {
     function OrderShippedState(order) {
         this.order = order;
     }
-    OrderShippedState.prototype.cancelOrderd = function () {
+    OrderShippedState.prototype.cancelOrder = function () {
         console.log('You can not cancel. Already shipped...');
     };
     OrderShippedState.prototype.verifyPayment = function () {
@@ -75,3 +78,8 @@ var OrderShippedState = (function () {
     };
     return OrderShippedState;
 }());
+var order = new Order();
+order.getState().verifyPayment();
+order.getState().shipOrder();
+order.getState().cancelOrder();
+console.log('Order state: ' + order.getState().constructor.name);

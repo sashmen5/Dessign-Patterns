@@ -1,14 +1,14 @@
 interface State {
     order: Order;
 
-    cancelOrderd();
-    verifyPayment();
-    shipOrder();
+    cancelOrder(): void;
+    verifyPayment(): void;
+    shipOrder(): void;
 }
 
 class Order {
 
-    public cancelledOrdererState: State;
+    public cancelledOrderState: State;
     public paymentPendingState: State;
     public orderBeingPreparedState: State;
     public orderShippedState: State;
@@ -16,7 +16,7 @@ class Order {
 
     public currentState: State;
     constructor() {
-        this.cancelledOrdererState = new CancelledOrderState(this);
+        this.cancelledOrderState = new CancelledOrderState(this);
         this.paymentPendingState = new PaymentPendingState(this);
         this.orderBeingPreparedState = new OrderBeingPreparedState(this);
         this.orderShippedState = new OrderShippedState(this);
@@ -24,7 +24,11 @@ class Order {
         this.setState(this.paymentPendingState);
     }
 
-    public setState(state: State) {
+    public setState(state: State): void {
+        this.currentState = state;
+    }
+
+    public getState(): State {
         return this.currentState;
     }
 }
@@ -36,9 +40,9 @@ class PaymentPendingState implements State {
         this.order = order;
     }
 
-    cancelOrderd() {
+    cancelOrder() {
         console.log('Cancelling your unpaid order...');
-        this.order.setState(this.order.cancelledOrdererState);
+        this.order.setState(this.order.cancelledOrderState);
     }
 
     verifyPayment() {
@@ -58,7 +62,7 @@ class CancelledOrderState implements State {
         this.order = order;
     }
 
-    cancelOrderd() {
+    cancelOrder() {
         console.log('Your order has already been cancelled');
     }
 
@@ -78,9 +82,9 @@ class OrderBeingPreparedState implements State {
         this.order = order;
     }
 
-    cancelOrderd() {
+    cancelOrder() {
         console.log('Cancelling you order...');
-        this.order.setState(this.order.cancelledOrdererState);
+        this.order.setState(this.order.cancelledOrderState);
     }
 
     verifyPayment() {
@@ -100,7 +104,7 @@ class OrderShippedState implements State {
         this.order = order;
     }
 
-    cancelOrderd() {
+    cancelOrder() {
         console.log('You can not cancel. Already shipped...');
     }
 
@@ -112,4 +116,11 @@ class OrderShippedState implements State {
         console.log('You can not ship it again. Already shipped...');
     }
 }
+
+let order = new Order();
+order.getState().verifyPayment();
+order.getState().shipOrder();
+order.getState().cancelOrder();
+
+console.log('Order state: ' + (<any>order.getState()).constructor.name);
 
