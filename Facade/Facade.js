@@ -89,3 +89,15 @@ var HomeTheaterFacade = (function () {
     };
     return HomeTheaterFacade;
 }());
+var bluray = new BlurayPlayer();
+var amp = new Amplifier();
+var lights = new Lights();
+var tv = new TV();
+var popcornMaker = new PopcornMaker();
+var homeTheater = new HomeTheaterFacade(bluray, amp, lights, tv, popcornMaker);
+console.log(' -| START WATCHING THE MOVIE |-');
+homeTheater.watchMovie();
+setTimeout(function () {
+    console.log(' -| FINISH WATCHING THE MOVIE |-');
+    homeTheater.endMovie();
+}, 3000);

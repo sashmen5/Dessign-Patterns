@@ -102,4 +102,18 @@ class HomeTheaterFacade {
     }
 }
 
-    
+const bluray = new BlurayPlayer();
+const amp = new Amplifier();
+const lights = new Lights();
+const tv = new TV();
+const popcornMaker = new PopcornMaker();
+
+const homeTheater = new HomeTheaterFacade(bluray, amp, lights, tv, popcornMaker);
+console.log(' -| START WATCHING THE MOVIE |-');
+homeTheater.watchMovie();
+
+setTimeout(() =>
+{
+    console.log(' -| FINISH WATCHING THE MOVIE |-');
+    homeTheater.endMovie()
+}, 3000);
