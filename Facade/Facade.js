@@ -62,3 +62,30 @@ var TV = (function () {
     };
     return TV;
 }());
+var HomeTheaterFacade = (function () {
+    function HomeTheaterFacade(bluray, amp, lights, tv, popcornMaker) {
+        this.bluray = bluray;
+        this.amp = amp;
+        this.lights = lights;
+        this.tv = tv;
+        this.popcornMaker = popcornMaker;
+    }
+    HomeTheaterFacade.prototype.watchMovie = function () {
+        this.popcornMaker.turnOn();
+        this.popcornMaker.pop();
+        this.lights.dim();
+        this.tv.turnOn();
+        this.amp.on();
+        this.amp.setSource('bluray');
+        this.amp.setVolume(11);
+        this.bluray.on();
+        this.bluray.play();
+    };
+    HomeTheaterFacade.prototype.endMovie = function () {
+        this.popcornMaker.turnOff();
+        this.amp.turnOff();
+        this.tv.turnOff();
+        this.bluray.turnOff();
+    };
+    return HomeTheaterFacade;
+}());
