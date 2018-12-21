@@ -19,8 +19,11 @@ var LightningToTypeCAdapter = (function () {
         this.iphoneDevice = iphoneDevice;
     }
     LightningToTypeCAdapter.prototype.useTypeC = function () {
-        console.log('Want to use Type-C, converting to Lightning');
+        console.log('Want to use Type-C, converting to Lightning.');
         this.iphoneDevice.useLightning();
     };
     return LightningToTypeCAdapter;
 }());
+var iphone = new iPhoneXS();
+var chargerAdapter = new LightningToTypeCAdapter(iphone);
+chargerAdapter.useTypeC();

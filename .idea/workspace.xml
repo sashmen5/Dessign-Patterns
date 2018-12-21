@@ -35,8 +35,8 @@
       <file leaf-file-name="Adapter.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Adapter/Adapter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="462">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -121,7 +121,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Facade/Facade.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Adapter/Adapter.js" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -144,13 +144,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.Facde">
+  <component name="RunManager" selected="Node.js.Adapter">
+    <configuration name="Adapter" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="Adapter/Adapter.js" working-dir="$PROJECT_DIR$" />
     <configuration name="Decorator" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="Decorator/Decorator.js" working-dir="$PROJECT_DIR$" />
     <configuration name="Facde" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="Facade/Facade.js" working-dir="$PROJECT_DIR$" />
     <configuration name="State" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="State/State.js" working-dir="$PROJECT_DIR$" />
     <list>
       <item itemvalue="Node.js.Decorator" />
       <item itemvalue="Node.js.Facde" />
+      <item itemvalue="Node.js.Adapter" />
       <item itemvalue="Node.js.State" />
     </list>
   </component>
@@ -166,12 +168,12 @@
       <updated>1545222988241</updated>
       <workItem from="1545222989913" duration="1052000" />
       <workItem from="1545329217621" duration="2833000" />
-      <workItem from="1545396140372" duration="1886000" />
+      <workItem from="1545396140372" duration="1968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5771000" />
+    <option name="totallyTimeSpent" value="5853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -268,8 +270,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Adapter/Adapter.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="462">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
