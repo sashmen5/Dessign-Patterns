@@ -17,7 +17,7 @@
       <file leaf-file-name="State.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/State/State.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="550">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
@@ -26,13 +26,13 @@
       <file leaf-file-name="Facade.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Facade/Facade.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
+            <state relative-caret-position="2552">
               <caret line="116" column="49" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adapter.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Adapter.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Adapter/Adapter.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -41,11 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/State/State.js">
+      <file leaf-file-name="Builder.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Builder/Builder.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="84" column="58" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="58" />
+            <state relative-caret-position="1098">
+              <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+              <folding>
+                <element signature="n#Robot#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +62,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Rbot</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Robot</replace>
+    </replaceStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -66,6 +78,7 @@
         <option value="$PROJECT_DIR$/State/State.ts" />
         <option value="$PROJECT_DIR$/Facade/Facade.ts" />
         <option value="$PROJECT_DIR$/Adapter/Adapter.ts" />
+        <option value="$PROJECT_DIR$/Builder/Builder.ts" />
       </list>
     </option>
   </component>
@@ -111,7 +124,7 @@
             <path>
               <item name="Dessign-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dessign-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Adapter" type="462c0819:PsiDirectoryNode" />
+              <item name="Builder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,11 +182,12 @@
       <workItem from="1545222989913" duration="1052000" />
       <workItem from="1545329217621" duration="2833000" />
       <workItem from="1545396140372" duration="1968000" />
+      <workItem from="1545499868288" duration="1271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5853000" />
+    <option name="totallyTimeSpent" value="7124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -184,6 +198,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -196,7 +211,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +221,7 @@
         <option value="$PROJECT_DIR$/State/State.js" />
         <option value="$PROJECT_DIR$/Facade/Facade.js" />
         <option value="$PROJECT_DIR$/Adapter/Adapter.js" />
+        <option value="$PROJECT_DIR$/Builder/Builder.js" />
       </list>
     </option>
   </component>
@@ -219,6 +234,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/State/State.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Facade/Facade.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2552">
+          <caret line="116" column="49" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/State/State.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="58" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter/Adapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/State/State.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -256,14 +299,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/State/State.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="550">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Facade/Facade.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
+        <state relative-caret-position="2552">
           <caret line="116" column="49" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
         </state>
       </provider>
@@ -272,6 +315,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Builder/Builder.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+          <folding>
+            <element signature="n#Robot#0" />
+          </folding>
         </state>
       </provider>
     </entry>
