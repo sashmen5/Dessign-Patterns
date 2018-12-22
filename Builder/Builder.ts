@@ -54,12 +54,7 @@ class Robot implements RobotPlan{
 
 
 class OldRobotBuilder implements RobotBuilder {
-
-    private  robot: Robot;
-
-    constructor() {
-        this.robot = new Robot();
-    }
+    private robot: Robot = new Robot();
 
     buildRobotArms(): void {
         this.robot.setRobotArms('Blowtorch Arms');
@@ -100,3 +95,25 @@ class RobotEngineer {
         this.robotBuilder.buildRobotArms();
     }
 }
+
+const oldStyleRobot: RobotBuilder = new OldRobotBuilder();
+
+const robotEngineer: RobotEngineer = new RobotEngineer(oldStyleRobot);
+
+robotEngineer.makeRobot();
+
+const firstRobot: Robot = robotEngineer.getRobot();
+const secondRobot: Robot = robotEngineer.getRobot();
+
+console.log('Robot built');
+console.log('Robot Head Type ' + firstRobot.getRobotHead());
+console.log('Robot Arms Type ' + firstRobot.getRobotArms());
+console.log('Robot Torso Type ' + firstRobot.getRobotTorso());
+console.log('Robot Legs Type ' + firstRobot.getRobotLegs());
+
+/* Be carefully! In this example we build only one robot */
+if (secondRobot === firstRobot) {
+    console.log('Same Robot');
+}
+
+

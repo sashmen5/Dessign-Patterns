@@ -63,3 +63,17 @@ var RobotEngineer = (function () {
     };
     return RobotEngineer;
 }());
+var oldStyleRobot = new OldRobotBuilder();
+var robotEngineer = new RobotEngineer(oldStyleRobot);
+robotEngineer.makeRobot();
+var firstRobot = robotEngineer.getRobot();
+var secondRobot = robotEngineer.getRobot();
+console.log('Robot built');
+console.log('Robot Head Type ' + firstRobot.getRobotHead());
+console.log('Robot Arms Type ' + firstRobot.getRobotArms());
+console.log('Robot Torso Type ' + firstRobot.getRobotTorso());
+console.log('Robot Legs Type ' + firstRobot.getRobotLegs());
+/* Be carefully! In this example we build only one robot */
+if (secondRobot === firstRobot) {
+    console.log('Same Robot');
+}
