@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var EnemyShipFactory_1 = require("./EnemyShipFactory");
+var enemyShipFactory = new EnemyShipFactory_1.default();
+var enemy = enemyShipFactory.makeEnemyShip('D');
+enemy.displayEnemyShip();
+console.log('===================');
+enemy = enemyShipFactory.makeEnemyShip('U');
+enemy.displayEnemyShip();
+console.log('===================');
+enemy = enemyShipFactory.makeEnemyShip('R');
+enemy.displayEnemyShip();
