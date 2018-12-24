@@ -51,3 +51,10 @@ var Fan = (function () {
     };
     return Fan;
 }());
+var weatherStation = new WeatherStation();
+var tempDisplay = new TemperatureDisplay(weatherStation);
+var fan = new Fan(weatherStation);
+weatherStation.setTemperature(30);
+setTimeout(function () {
+    weatherStation.setTemperature(20);
+}, 1300);
