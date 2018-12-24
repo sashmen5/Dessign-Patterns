@@ -32,15 +32,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketEnemyShip.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Factory/RocketEnemyShip.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EnemyShipTesting.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Factory/EnemyShipTesting.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,14 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCloning.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCloning.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prototype/TestCloning.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Observer/TypeScript/Observer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="716">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -148,6 +148,7 @@
         <option value="$PROJECT_DIR$/Prototype/Sheep.ts" />
         <option value="$PROJECT_DIR$/Prototype/CloneFactory.ts" />
         <option value="$PROJECT_DIR$/Prototype/TestCloning.ts" />
+        <option value="$PROJECT_DIR$/Observer/TypeScript/Observer.ts" />
       </list>
     </option>
   </component>
@@ -182,7 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,17 +193,19 @@
             <path>
               <item name="Dessign-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dessign-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
+              <item name="Observer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dessign-Patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dessign-Patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="Observer" type="462c0819:PsiDirectoryNode" />
+              <item name="TypeScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,19 +264,21 @@
       <workItem from="1545396140372" duration="1968000" />
       <workItem from="1545499868288" duration="4100000" />
       <workItem from="1545556210780" duration="645000" />
-      <workItem from="1545577399725" duration="1702000" />
+      <workItem from="1545577399725" duration="2877000" />
+      <workItem from="1545581094851" duration="30000" />
+      <workItem from="1545662548981" duration="905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12300000" />
+    <option name="totallyTimeSpent" value="14410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20021075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2507903" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -313,6 +317,7 @@
         <option value="$PROJECT_DIR$/Prototype/Clonable.js" />
         <option value="$PROJECT_DIR$/Prototype/CloneFactory.js" />
         <option value="$PROJECT_DIR$/Prototype/TestCloning.js" />
+        <option value="$PROJECT_DIR$/Observer/TypeScript/Observer.js" />
       </list>
     </option>
   </component>
@@ -325,6 +330,54 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Prototype/Animal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/Clonable.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/Sheep.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/CloneFactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Factory/EnemyShipFactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/TestCloning.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Facade/Facade.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2552">
@@ -343,9 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="n#Robot#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,9 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="n#Robot#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,9 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="n#Robot#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,10 +691,17 @@
     <entry file="file://$PROJECT_DIR$/Prototype/TestCloning.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Observer/TypeScript/Observer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
